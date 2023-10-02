@@ -25,14 +25,11 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
+* Create a virtual env and activate it
 ```bash
-python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
-# Check the Python path using `which python3`
-# Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
+python3 -m venv ~/.devops
+
+source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
@@ -45,6 +42,14 @@ source .devops/bin/activate
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+  ./run_docker.sh
+In another terminal run ./make_prediction.sh
 * Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+  ./run_kubernetes.sh
+Once the kubernetes is deployed check the following
+
+List the pods
+kubectl get pods -A
+kubectl logs <podname>
+In another terminal run ./make_prediction.sh
+
