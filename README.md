@@ -40,7 +40,7 @@ source ~/.devops/bin/activate
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
-
+```bash
 * Setup and Configure Docker locally
   ./run_docker.sh
 In another terminal run ./make_prediction.sh
@@ -52,4 +52,4 @@ List the pods
 kubectl get pods -A
 kubectl logs <podname>
 In another terminal run ./make_prediction.sh
-
+```
