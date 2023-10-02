@@ -8,8 +8,7 @@ COPY . app.py /app/
 
 ## Step 3:
 
-RUN pip install --upgrade pip &&\
-    pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # hadolint ignore=DL3013
 
