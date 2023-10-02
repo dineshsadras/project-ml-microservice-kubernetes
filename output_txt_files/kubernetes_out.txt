@@ -1,0 +1,14 @@
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "api" already exists
+NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
+default       api                                1/1     Running   0             2m33s
+kube-system   coredns-5d78c9869d-75b26           1/1     Running   0             13m
+kube-system   etcd-minikube                      1/1     Running   0             13m
+kube-system   kube-apiserver-minikube            1/1     Running   0             13m
+kube-system   kube-controller-manager-minikube   1/1     Running   0             13m
+kube-system   kube-proxy-j8pvc                   1/1     Running   0             13m
+kube-system   kube-scheduler-minikube            1/1     Running   0             13m
+kube-system   storage-provisioner                1/1     Running   1 (12m ago)   13m
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
